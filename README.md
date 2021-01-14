@@ -20,6 +20,7 @@ The objective of this project is to build a classification model that can accura
 On first scrape of data, I note that the nature of the subreddit posts on `r/Conservative` and `r/democrats` are that each post most often have a title, comment threads and link to an article from a news site. There is rarely content in the body of the post itself. Due to this nature, I decided to work with just the titles and the comments as my data. 
 
 [<ins>Data Cleaning and Exploration</ins>](code/02-data-cleaning-and-preprocessing.ipynb)
+
 With the titles and comments, prior to modelling, I preprocessed it to expand contractions, remove punctuations and tokenizing. On top of that, I also created two separate files for each dataset (ie. titles and comments) where I did stemming on one, and lemmatized the other. This is to see which ones can work better in modelling later.
 
 The target variable is also converted to a binary where `r/Conservative`s are labelled as 1 and `r/democrats` lebelled as 0. 
